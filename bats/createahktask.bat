@@ -1,0 +1,1 @@
+schtasks /Create /RU "marius" /SC ONLOGON /TN "AHK" /TR "e:\Documents\AutoHotkey.ahk" /IT /V1
