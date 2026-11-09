@@ -5,14 +5,17 @@ Import-Module ConsoleMonster
 Enable-ConsoleFormatting
 
 Set-Alias -Name ls -Value eza
-Set-Alias -Name "gpl" -Value "git pull"
 
 
 
-
-
-
-
+function gaa()
+{
+   & git add *        
+}
+function gpl ()
+{
+   & git pull
+}
 function bk([string]$fileName)
 {
 	if (! $fileName)
@@ -24,7 +27,3 @@ function bk([string]$fileName)
 	 	 & bookokrat --zen-mode "$fileName" 
 	}
 }
-
-
-
-
